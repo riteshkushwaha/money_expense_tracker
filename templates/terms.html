@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — ExpenseTracker{% endblock %}
+
+{% block content %}
+
+<section class="terms-section">
+    <div class="terms-container">
+        <div class="terms-header">
+            <h1 class="terms-title">Terms and Conditions</h1>
+            <p class="terms-updated">Last updated: March 29, 2026</p>
+        </div>
+
+        <div class="terms-content">
+            <div class="terms-article">
+                <h2>1. Acceptance of Terms</h2>
+                <p>
+                    By accessing and using ExpenseTracker ("the Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>2. Use of Service</h2>
+                <p>
+                    You agree to use ExpenseTracker only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use and enjoyment of the Service. Prohibited behavior includes:
+                </p>
+                <ul class="terms-list">
+                    <li>Harassing or causing distress or inconvenience to any person</li>
+                    <li>Intentionally obscuring your identity or providing false information</li>
+                    <li>Interfering with the normal functioning of the Service</li>
+                    <li>Attempting to gain unauthorized access to systems or data</li>
+                </ul>
+            </div>
+
+            <div class="terms-article">
+                <h2>3. User Data and Privacy</h2>
+                <p>
+                    ExpenseTracker is committed to protecting your personal information. All financial data and personal information you provide is stored securely and will not be shared with third parties without your explicit consent, except as required by law. Your expense data belongs to you, and we use industry-standard encryption to protect it.
+                </p>
+                <p>
+                    You are responsible for maintaining the confidentiality of your login credentials. You agree to notify us immediately of any unauthorized use of your account.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>4. User Account Responsibilities</h2>
+                <p>
+                    You are responsible for all activities that occur under your account. You must ensure that your account information is accurate and kept up to date. You agree not to share your account with others and not to use another person's account without permission.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>5. Limitations of Liability</h2>
+                <p>
+                    ExpenseTracker is provided on an "as-is" basis without warranties of any kind, either express or implied. We do not warrant that the Service will be uninterrupted, timely, secure, or error-free.
+                </p>
+                <p>
+                    To the maximum extent permitted by law, ExpenseTracker shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the Service, even if we have been advised of the possibility of such damages.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>6. Data Backup and Loss</h2>
+                <p>
+                    While we strive to maintain regular backups of user data, ExpenseTracker is not responsible for any loss of data. You are responsible for maintaining your own backups of important financial information. We recommend regularly reviewing and exporting your expense data.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>7. Modifications to Service</h2>
+                <p>
+                    ExpenseTracker reserves the right to modify or discontinue the Service at any time, with or without notice. We are not liable to you or any third party for any modification, suspension, or discontinuation of the Service.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>8. Changes to Terms</h2>
+                <p>
+                    ExpenseTracker reserves the right to modify these terms at any time. Changes will be effective immediately upon posting to the Service. Your continued use of the Service following the posting of revised terms means that you accept and agree to the changes. It is your responsibility to check the terms periodically for changes.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>9. Termination</h2>
+                <p>
+                    We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including if you breach the Terms. Upon termination, your right to use the Service will immediately cease.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>10. Governing Law</h2>
+                <p>
+                    These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction in which the Service is provided, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
+                </p>
+            </div>
+
+            <div class="terms-article">
+                <h2>11. Contact Information</h2>
+                <p>
+                    If you have any questions about these Terms and Conditions, please contact us at support@expensetracker.com.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.terms-section {
+    padding: 4rem 2rem;
+    background: var(--paper);
+}
+
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.terms-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.terms-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+.terms-updated {
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+}
+
+.terms-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.terms-article h2 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--ink);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.terms-article p {
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.terms-article p:last-child {
+    margin-bottom: 0;
+}
+
+.terms-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0 0 0;
+}
+
+.terms-list li {
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.terms-list li::before {
+    content: "•";
+    color: var(--accent);
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 600px) {
+    .terms-section {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .terms-title {
+        font-size: 1.75rem;
+    }
+
+    .terms-article h2 {
+        font-size: 1.1rem;
+    }
+}
+</style>
+
+{% endblock %}
