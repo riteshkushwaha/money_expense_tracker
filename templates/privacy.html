@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — ExpenseTracker{% endblock %}
+
+{% block content %}
+
+<section class="privacy-section">
+    <div class="privacy-container">
+        <div class="privacy-header">
+            <h1 class="privacy-title">Privacy Policy</h1>
+            <p class="privacy-updated">Last updated: March 29, 2026</p>
+        </div>
+
+        <div class="privacy-content">
+            <div class="privacy-article">
+                <h2>1. Introduction</h2>
+                <p>
+                    ExpenseTracker ("we", "us", "our", or "the Service") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application.
+                </p>
+            </div>
+
+            <div class="privacy-article">
+                <h2>2. Data We Collect</h2>
+                <p>We collect information you provide directly to us, including:</p>
+                <ul class="privacy-list">
+                    <li><strong>Account Information:</strong> Email address, username, password, and profile information</li>
+                    <li><strong>Financial Data:</strong> Expense records, amounts, categories, dates, and descriptions</li>
+                    <li><strong>Usage Information:</strong> How you interact with the Service, features used, and pages visited</li>
+                    <li><strong>Device Information:</strong> Browser type, IP address, device type, and operating system</li>
+                    <li><strong>Communication Data:</strong> Messages you send us through support channels</li>
+                </ul>
+            </div>
+
+            <div class="privacy-article">
+                <h2>3. How We Use Your Data</h2>
+                <p>We use the collected data for the following purposes:</p>
+                <ul class="privacy-list">
+                    <li>To provide and maintain the Service</li>
+                    <li>To process your transactions and send related information</li>
+                    <li>To send transactional and promotional emails (with your consent)</li>
+                    <li>To improve and optimize the Service</li>
+                    <li>To respond to your inquiries and provide customer support</li>
+                    <li>To detect, prevent, and address technical issues and fraud</li>
+                    <li>To comply with legal obligations</li>
+                </ul>
+            </div>
+
+            <div class="privacy-article">
+                <h2>4. Data Storage and Security</h2>
+                <p>
+                    Your data is stored on secure servers protected by industry-standard encryption (SSL/TLS). We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+                </p>
+                <p>
+                    However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee absolute security.
+                </p>
+            </div>
+
+            <div class="privacy-article">
+                <h2>5. Data Retention</h2>
+                <p>
+                    We retain your personal information for as long as your account is active or as needed to provide you with the Service. You can request deletion of your account and associated data at any time by contacting us. After account deletion, we may retain anonymized or aggregated data for analytical purposes.
+                </p>
+            </div>
+
+            <div class="privacy-article">
+                <h2>6. Third-Party Services</h2>
+                <p>
+                    ExpenseTracker may use third-party services to enhance functionality, such as analytics tools and email providers. These third parties are required to maintain the confidentiality of your information and may not use it for any purpose other than providing services to us.
+                </p>
+                <p>
+                    We do not share your financial data (expenses) with any third parties without your explicit consent. Third parties only have access to non-sensitive technical and usage information necessary to provide their services.
+                </p>
+            </div>
+
+            <div class="privacy-article">
+                <h2>7. Your Rights</h2>
+                <p>You have the following rights regarding your personal data:</p>
+                <ul class="privacy-list">
+                    <li><strong>Access:</strong> Request a copy of your personal data</li>
+                    <li><strong>Correction:</strong> Update or correct inaccurate information</li>
+                    <li><strong>Deletion:</strong> Request deletion of your account and data</li>
+                    <li><strong>Opt-Out:</strong> Unsubscribe from promotional communications</li>
+                    <li><strong>Data Portability:</strong> Request your data in a portable format</li>
+                </ul>
+            </div>
+
+            <div class="privacy-article">
+                <h2>8. Cookies and Tracking</h2>
+                <p>
+                    ExpenseTracker uses cookies to enhance your experience. These are small files stored on your device that help us recognize you and remember your preferences. You can control cookie settings through your browser preferences. Note that disabling cookies may affect certain functionalities of the Service.
+                </p>
+            </div>
+
+            <div class="privacy-article">
+                <h2>9. Children's Privacy</h2>
+                <p>
+                    ExpenseTracker is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected data from a child under 13, we will immediately delete such information and terminate the child's account.
+                </p>
+            </div>
+
+            <div class="privacy-article">
+                <h2>10. Changes to This Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of significant changes by posting the updated Privacy Policy in the Service and updating the "Last updated" date.
+                </p>
+            </div>
+
+            <div class="privacy-article">
+                <h2>11. Contact Us</h2>
+                <p>
+                    If you have questions about this Privacy Policy, your privacy, or how we handle your data, please contact us at:
+                </p>
+                <p>
+                    <strong>Email:</strong> privacy@expensetracker.com<br>
+                    <strong>Mailing Address:</strong> Support Team, ExpenseTracker
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.privacy-section {
+    padding: 4rem 2rem;
+    background: var(--paper);
+}
+
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.privacy-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+.privacy-updated {
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+}
+
+.privacy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.privacy-article h2 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--ink);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+.privacy-article p {
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.privacy-article p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0 0 0;
+}
+
+.privacy-list li {
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.privacy-list li::before {
+    content: "•";
+    color: var(--accent);
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+}
+
+.privacy-list strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .privacy-section {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .privacy-title {
+        font-size: 1.75rem;
+    }
+
+    .privacy-article h2 {
+        font-size: 1.1rem;
+    }
+}
+</style>
+
+{% endblock %}
